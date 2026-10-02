@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emmanuel | Web Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="icon" type="image/x-icon" href="images/1st.png">
+</head>
+
+<body>
+
+  <!-- Header / Navigation -->
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">&lt;Emmanuel /&gt;</a>
+      <ul class="nav-links">
+        <li><a href="#about">About-Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">View-Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#cv">View CV</a></li>
+      </ul>
+      <div class="hamburger" id="hamburger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Emmanuel</span></h1>
+      <h2>Web Developer & Computer Engineer</h2>
+      <p>I build clean, interactive, and functional web experiences.</p>
+      <img src="images/1st1.png" height="325" width="230">
+      <div class="hero-btns">
+        <a href="#projects" class="btn primary-btn">View My Work</a>
+        <a href="#contact" class="btn secondary-btn">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about" id="about">
+    <div class="section-title">
+      <h2>About Me</h2>
+    </div>
+    <div class="about-content">
+      <p>
+        I am a passionate web developer and computer engineer focused on building modern, user-centered software. I
+        create responsive interfaces with HTML, CSS, and JavaScript, turning ideas into clean, interactive, and
+        functional web experiences.
+      </p>
+      <p>
+        I enjoy working through core programming concepts, writing maintainable frontend code, and using Git and GitHub
+        to manage projects effectively. I am continually growing my software-development skills through hands-on
+        projects, problem-solving, and a focus on creating reliable solutions that make a real difference for users.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section class="skills" id="skills">
+    <div class="section-title">
+      <h2>Skills</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <i class="fab fa-html5"></i>
+        <h3>HTML5</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-css3-alt"></i>
+        <h3>CSS3</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-js-square"></i>
+        <h3>JavaScript</h3>
+      </div>
+      <div class="skill-card">
+        <i class="fab fa-git-alt"></i>
+        <h3>Git & GitHub</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section class="projects" id="projects">
+    <div class="section-title">
+      <h2>Featured Projects</h2>
+    </div>
+    <div class="projects-grid">
+
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Personal Portfolio</h3>
+          <p>A responsive portfolio website built using HTML, CSS, and interactive JavaScript.</p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-info">
+          <h3>E-Commerce / Device Store</h3>
+          <p>A tech storefront concept designed for modern device sales and marketing layouts.</p>
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JS</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+            <a href="#" class="btn-sm"><i class="fas fa-external-link-alt"></i> Demo</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="section-title">
+      <h2>Get In Touch</h2>
+    </div>
+    <form class="contact-form" id="contactForm" novalidate>
+  <input type="text" id="name" name="name" placeholder="Your Name" required>
+  <input type="email" id="email" name="email" placeholder="Your Email" required>
+  <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+  <button type="submit" class="btn primary-btn">Send Message</button>
+  <p class="form-status" id="formStatus" aria-live="polite"></p>
+</form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; <span id="year"></span> Emmanuel. All rights reserved.</p>
+    <br>
+    <div class="m-edit">
+      <div class="M">M.CODE</div>
+    </div>
+
+  </footer>
+
+  <script src="JavaScript.js"></script>
+</body>
+
+</html>
