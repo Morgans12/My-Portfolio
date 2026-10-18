@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Emmanuel Obasi | Computer Engineer and Web Developer</title>
+  <meta name="description"
+    content="Emmanuel Obasi builds websites, web apps and automation tools that solve real business problems. See projects and get in touch.">
+  <meta name="theme-color" content="#0e6b47">
+  <!-- Open Graph: controls how links look on WhatsApp, LinkedIn, X -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Emmanuel Obasi | Computer Engineer and Web Developer">
+  <meta property="og:description"
+    content="Emmanuel Obasi builds websites, web apps and automation tools that solve real business problems. See projects and get in touch.">
+  <meta property="og:image" content="images/og-image.png">
+  <link rel="icon" type="image/png" href="images/emmanuel.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=DM+Sans:wght@400;500;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <div class="back">
+        <span class="art">EO</span>
+        <a href="index.html" class="logo" aria-label="Emmanuel Obasi, home">Emmanuel Obasi<span>.</span></a>
+      </div>
+
+      <nav aria-label="Main">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#stack">Stack</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn theme-toggle" id="themeToggle" type="button" aria-label="Light theme active. Activate dark theme" aria-pressed="false"><i class="fas fa-sun" aria-hidden="true"></i></button>
+        <a class="btn btn--primary btn--small nav-cta" href="#contact">Start a project</a>
+        <button class="icon-btn nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks"
+          aria-label="Menu"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <p class="availability"><i aria-hidden="true"></i> Available for new projects</p>
+          <h1>You bring the problem. <em>I build the solution.</em></h1>
+          <p class="hero-lead">I'm Emmanuel Obasi, a computer engineer and web developer. I build thoughtful, responsive
+            websites and practical web tools that help businesses serve customers and work more efficiently.</p>
+          <div class="btn-row">
+            <a class="btn btn--primary" href="cv/Emmanuels_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-download" aria-hidden="true"></i> Download Resume</a>     
+            <a class="btn btn--ghost" href="#contact">Contact me</a>
+          </div>
+          <nav class="hero-socials" aria-label="Social profiles">
+            <a href="https://github.com/Morgans12" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+              <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/emmanuel-obasi-2b7757327?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+              <i class="fab fa-linkedin-in" aria-hidden="true"></i>
+            </a>
+            <a href="https://x.com/EmmanuelOb6174" target="_blank" rel="noopener noreferrer" aria-label="X">
+              <i class="fab fa-x-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.instagram.com/m.freeman08?cplk=YWZ2bjlvNDE2ZnQz" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+          </nav>
+        </div>
+
+        <figure class="hero-photo">
+          <img src="images/emmanuel.jpg" alt="Portrait of Emmanuel Obasi in a black suit" width="900" height="1350"
+            fetchpriority="high">
+        </figure>
+      </div>
+    </section>
+
+    <section class="facts-strip" aria-label="At a glance">
+      <div class="wrap">
+        <dl class="strip">
+          <div>
+            <dt>Featured projects</dt>
+            <dd>2</dd>
+          </div>
+          <div>
+            <dt>Core technologies</dt>
+            <dd>HTML, CSS, JavaScript</dd>
+          </div>
+          <div>
+            <dt>Reply time</dt>
+            <dd>2 working days</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="try-title">
+      <div class="wrap try">
+        <div>
+          <h2 id="try-title" style="font-size:clamp(1.8rem,4vw,2.6rem)">Start with the problem, not the technology</h2>
+          <p style="color:var(--muted)">Start with what is slowing your work down. Choose a common challenge to see a
+            practical solution I could build.</p>
+          <a class="btn btn--ghost" href="#contact">Describe your own problem</a>
+        </div>
+        <div class="switcher" role="group" aria-labelledby="switcher-title">
+          <p class="switcher-title" id="switcher-title">Pick a problem to see what I would build</p>
+          <div class="switcher-tabs">
+            <button class="switcher-tab" type="button" aria-selected="true"
+              data-solution="An order form that lands in one tidy list, with a clear status for every order.">Orders get
+              lost in WhatsApp chats</button>
+            <button class="switcher-tab" type="button" aria-selected="false"
+              data-solution="A small tool that enters, checks and summarises the data so your team does not have to.">My
+              team repeats the same data entry</button>
+            <button class="switcher-tab" type="button" aria-selected="false"
+              data-solution="A fast, mobile-friendly website that shows your services and makes it easy to contact you.">Customers
+              cannot find my business online</button>
+            <button class="switcher-tab" type="button" aria-selected="false"
+              data-solution="An API connection that moves information between your systems without retyping.">My tools
+              do not talk to each other</button>
+          </div>
+          <div class="switcher-panel" aria-live="polite">
+            <small>What I would build</small>
+            <p id="switcherText">An order form that lands in one tidy list, with a clear status for every order.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section--tint" aria-labelledby="change-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="change-title">The difference thoughtful software can make</h2>
+          <p>Small, practical improvements can make everyday work clearer and easier to manage.</p>
+        </div>
+        <div class="compare">
+          <div class="compare-col compare-col--before">
+            <h3>Before</h3>
+            <ul>
+              <li>Orders and enquiries scattered across chats</li>
+              <li>The same data typed in by hand, again and again</li>
+              <li>Customers cannot tell what you offer or how to reach you</li>
+              <li>Information stuck in separate tools</li>
+              <li>Mistakes found late, after they cost money</li>
+            </ul>
+          </div>
+          <div class="compare-col compare-col--after">
+            <h3>After</h3>
+            <ul>
+              <li>Every order and enquiry in one organised place</li>
+              <li>Routine tasks handled automatically</li>
+              <li>A website that explains your services in seconds</li>
+              <li>Systems that share information on their own</li>
+              <li>Checks built in, so errors are caught early</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+    <section id="experience" class="section section--tint" aria-labelledby="experience-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="navs">Experience</span>
+          <h2 id="experience-title">Selected work, from idea to implementation.</h2>
+          <p>A closer look at the projects, decisions and tools behind my work.</p>
+        </div>
+        <div class="experience-timeline">
+          <div class="experience-item">
+            <div class="experience-meta">
+              <time datetime="2026">2026</time>
+              <span>Brand website</span>
+            </div>
+            <article class="experience-card">
+              <div class="experience-card__body">
+                <p class="experience-card__category">Independent project</p>
+                <h3>Nnenna's Pride</h3>
+                <p class="experience-card__summary">Designed and built a responsive website for a plantain chips brand, with product-focused content and a clear browsing experience across phones, tablets and desktops.</p>
+                <ul class="experience-highlights">
+                  <li>Structured the site to make the product range and brand story easy to explore.</li>
+                  <li>Created custom responsive layouts and interactions without a front-end framework.</li>
+                  <li>Published the completed website in 2026.</li>
+                </ul>
+                <div class="experience-card__stack">
+                  <h4>Tools and technologies</h4>
+                  <ul class="tags" aria-label="Nnenna's Pride tools and technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                  </ul>
+                </div>
+                <a class="experience-card__link" href="https://chipsweb.vercel.app/"  target="_blank">Explore project <i class="fas fa-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+          <div class="experience-item">
+            <div class="experience-meta">
+              <time datetime="2026">2026</time>
+              <span>Personal website</span>
+            </div>
+            <article class="experience-card">
+              <div class="experience-card__body">
+                <p class="experience-card__category">Independent project</p>
+                <h3>My Portfolio</h3>
+                <p class="experience-card__summary">Built a responsive portfolio to present my work and skills, with accessible page structure and interactive features that work across screen sizes.</p>
+                <ul class="experience-highlights">
+                  <li>Implemented a mobile navigation menu and an interactive project switcher.</li>
+                  <li>Added a light/dark theme toggle and responsive page layouts.</li>
+                  <li>Organized project files and version control with Git and GitHub.</li>
+                </ul>
+                <div class="experience-card__stack">
+                  <h4>Tools and technologies</h4>
+                  <ul class="tags" aria-label="Portfolio tools and technologies">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                  </ul>
+                  <p class="experience-card__framework-note">Built with vanilla JavaScript; no front-end framework.</p>
+                </div>
+                <a class="experience-card__link" href="#main">You’re viewing this project <i class="fas fa-arrow-up" aria-hidden="true"></i></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section portfolio-projects" aria-labelledby="portfolio-projects-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="navs">Projects</span>
+          <h2 id="portfolio-projects-title">Selected projects</h2>
+          <p>Web experiences I’ve designed and built, with a focus on clear content and practical user needs.</p>
+        </div>
+
+        <article class="project">
+          <!-- Text on the left -->
+          <div class="content">
+            <p class="eyebrow">Brand website · HTML + CSS + JavaScript</p>
+
+            <div class="title-row">
+              <div class="log">
+                NP
+              </div>
+              <div>
+                <h2>Nnenna's Pride</h2>
+                <p class="tagline">Bold plantain chips, made to be noticed</p>
+              </div>
+            </div>
+
+            <p class="intro">
+              I designed and built a product-focused website for Nnenna’s Pride, presenting its plantain chips with
+              bold imagery, clear product information and straightforward navigation.
+            </p>
+
+            <ul class="checks">
+              <li>Bold product imagery that puts every flavour front and centre</li>
+              <li>Simple navigation so visitors reach the products in one tap</li>
+              <li>Fully responsive layout that works on phones, tablets and desktops</li>
+              <li>Built with HTML, CSS and JavaScript, without a front-end framework</li>
+              <li>Live and published online in 2026</li>
+            </ul>
+
+            <ul class="pills" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive design</li>
+            </ul>
+            <div class="btn-row">
+              <!-- TODO: replace # with your live site and repository links -->
+              <a class="btn btn--ghost btn--small" href="https://chipsweb.vercel.app/" target="_blank"><i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                Live demo</a>
+              <a class="btn btn--ghost btn--small" href="https://github.com/Morgans12/Nennas-Chipsweb" target="_blank"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+          </div>
+
+          <!-- Visual on the right -->
+          <div class="visual">
+            <div class="browser">
+              <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <img src="images/Chipsweb-UI.png" alt="Nnenna's Pride homepage on desktop">
+            </div>
+            <div class="phone">
+              <img src="images/Chipsweb-UI.png" alt="Nnenna's Pride homepage on mobile">
+            </div>
+          </div>
+        </article>
+
+
+        <!------ second article  ---->
+        <article class="project">
+          <!-- Text on the left -->
+          <div class="content">
+            <p class="eyebrow">Personal Portfolio · HTML + CSS + JavaScript</p>
+
+            <div class="title-row">
+              <div class="log1">
+                <!-- Replace with your logo: <img src="logo.png" alt="Nnenna's Pride logo"> -->
+                P
+              </div>
+              <div>
+                <h2>My Portfolio</h2>
+                <p class="tagline">A focused home for my work, skills and story</p>
+              </div>
+            </div>
+
+            <p class="intro">
+              I built this portfolio to bring my projects, experience and technical toolkit together in one place. It
+              gives potential clients, collaborators and fellow developers a clear way to explore my work and contact me.
+            </p>
+
+            <ul class="checks">
+              <li>Clear personal branding that highlights my skills, personality, and professional identity</li>
+              <li>Clear navigation to projects, experience, skills and contact details</li>
+              <li>Fully responsive layout that works on phones, tablets and desktops</li>
+              <li>Accessible page structure with lightweight JavaScript interactions</li>
+              <li>Built to grow as I take on new projects and develop my skills</li>
+            </ul>
+
+            <ul class="pills" aria-label="Technologies used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Responsive design</li>
+            </ul>
+            <div class="btn-row">
+              <!-- TODO: replace # with your live site and repository links -->
+              <a class="btn btn--ghost btn--small" href="#"><i class="fas fa-external-link-alt" aria-hidden="true"></i>
+                Live demo</a>
+              <a class="btn btn--ghost btn--small" href="#"><i class="fab fa-github" aria-hidden="true"></i> Code</a>
+            </div>
+          </div>
+
+          <!-- Visual on the right -->
+          <div class="visual">
+            <div class="browser">
+              <div class="browser-bar" aria-hidden="true"><span></span><span></span><span></span></div>
+              <img src="images/P-UI-Lap.png" alt="Preview of Emmanuel Obasi's portfolio website">
+            </div>
+            <div class="phone">
+              <img src="images/P-UI-phone.png" alt="Portfolio website preview displayed in a mobile frame">
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="services" class="section" aria-labelledby="services-title">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="navs">What I do</span>
+          <h2 id="services-title">What I build—and where it runs</h2>
+          <p>I build responsive websites and browser-based tools around real business needs and the people who use them.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service"><i class="fas fa-laptop-code" aria-hidden="true"></i>
+            <h3>Business websites</h3>
+            <p><strong>Built:</strong> Nnenna's Pride, a product-focused brand website. <strong>For you:</strong> a fast, responsive site that presents your services and helps customers get in touch.</p>
+          </article>
+          <article class="service"><i class="fas fa-table-columns" aria-hidden="true"></i>
+            <h3>Web apps and tools</h3>
+            <p><strong>Built:</strong> this portfolio, with an interactive project switcher and theme toggle. <strong>For you:</strong> browser-based dashboards, forms and internal tools.</p>
+          </article>
+          <article class="service"><i class="fas fa-gears" aria-hidden="true"></i>
+            <h3>Workflow automation</h3>
+            <p><strong>For you:</strong> small systems that handle repetitive data entry, checks and notifications, helping your team spend less time on routine tasks.</p>
+          </article>
+          <article class="service"><i class="fas fa-code-branch" aria-hidden="true"></i>
+            <h3>API integrations</h3>
+            <p><strong>For you:</strong> connections between websites, apps and the services you already use, so information can move without retyping.</p>
+          </article>
+        </div> 
+        <div class="platform-summary" aria-labelledby="platforms-title">
+          <div class="platform-summary__intro">
+            <span class="navs">Platforms</span>
+            <h3 id="platforms-title">Built for the screens people use.</h3>
+            <p>I build browser-based websites and tools, with responsive layouts that adapt to the device people use.</p>
+          </div>
+          <ul class="platform-list">
+            <li><i class="fas fa-mobile-screen" aria-hidden="true"></i><span><strong>Phones</strong><small>Touch-friendly mobile layouts</small></span></li>
+            <li><i class="fas fa-tablet-screen-button" aria-hidden="true"></i><span><strong>Tablets</strong><small>Comfortable layouts for mid-size screens</small></span></li>
+            <li><i class="fas fa-laptop" aria-hidden="true"></i><span><strong>Laptops and desktops</strong><small>Clear, spacious browser experiences</small></span></li>
+          </ul>
+        </div>
+        <article class="service-detail">
+          <div><h2>Business websites</h2><p class="for">For businesses that want a professional online presence.</p></div>
+          <ul>
+            <li>Responsive design that works on any phone, tablet or laptop</li>
+            <li>Clear pages for your services, products and contact details</li>
+            <li>Contact forms and WhatsApp links that send enquiries straight to you</li>
+            <li>Search-friendly structure and fast loading</li>
+          </ul>
+        </article>
+        <article class="service-detail">
+          <div><h2>Web apps and internal tools</h2><p class="for">For teams that run on spreadsheets and chat threads.</p></div>
+          <ul>
+            <li>Order, booking or inventory trackers</li>
+            <li>Dashboards that show what matters at a glance</li>
+            <li>Forms that collect clean, consistent data</li>
+            <li>Simple user access so the right people see the right information</li>
+          </ul>
+        </article>
+        <article class="service-detail">
+          <div><h2>Workflow automation</h2><p class="for">For work your team repeats every day.</p></div>
+          <ul>
+            <li>Automatic data entry, checks and reports</li>
+            <li>Notifications when something needs attention</li>
+            <li>Fewer errors from copying information by hand</li>
+          </ul>
+        </article>
+        <article class="service-detail">
+          <div><h2>API integrations</h2><p class="for">For tools that should share information but do not.</p></div>
+          <ul>
+            <li>Connect the services you already use</li>
+            <li>Move data between systems without retyping</li>
+            <li>Build a small API for your own app or website</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="stack" class="section tech-stack-section" aria-labelledby="skills-title">
+      <div class="wrap">
+        <div class="tech-stack__heading">
+          <div class="section-head">
+            <span class="navs">TECH STACK</span>
+            <p class="tech-stack__eyebrow">MY TOOLKIT <span aria-hidden="true">/</span> ALWAYS EVOLVING</p>
+            <h2 id="skills-title">The stack behind the work.</h2>
+            <p>What I build with today, where I’m growing, and how I keep projects moving.</p>
+          </div>
+          <p class="tech-stack__count"><span>04</span> skill areas</p>
+        </div>
+        <div class="tech-stack__rows">
+          <article class="tech-stack__row" aria-labelledby="stack-web-title">
+            <div class="tech-stack__category">
+              <span class="tech-stack__index" aria-hidden="true">01</span>
+              <div>
+                <h3 id="stack-web-title">Web</h3>
+                <p class="tech-stack__state"><span></span>Daily use</p>
+              </div>
+            </div>
+            <ul class="tech-stack__skills" aria-label="Web skills">
+              <li><i class="fab fa-html5" aria-hidden="true"></i>HTML5</li>
+              <li><i class="fab fa-css3-alt" aria-hidden="true"></i>CSS3</li>
+              <li><i class="fab fa-js-square" aria-hidden="true"></i>JavaScript</li>
+              <li><i class="fas fa-mobile-screen" aria-hidden="true"></i>Responsive design</li>
+            </ul>
+          </article>
+          <article class="tech-stack__row" aria-labelledby="stack-ai-title">
+            <div class="tech-stack__category">
+              <span class="tech-stack__index" aria-hidden="true">02</span>
+              <div>
+                <h3 id="stack-ai-title">AI</h3>
+                <p class="tech-stack__state tech-stack__state--exploring"><span></span>Exploring</p>
+              </div>
+            </div>
+            <ul class="tech-stack__skills" aria-label="AI and automation skills">
+              <li><i class="fas fa-robot" aria-hidden="true"></i>Claude</li>
+              <li><i class="fas fa-brain" aria-hidden="true"></i>OpenAI</li>
+              <li><i class="fas fa-wand-magic-sparkles" aria-hidden="true"></i>Gemini</li>
+            </ul>
+          </article>
+          <article class="tech-stack__row" aria-labelledby="stack-backend-title">
+            <div class="tech-stack__category">
+              <span class="tech-stack__index" aria-hidden="true">03</span>
+              <div>
+                <h3 id="stack-backend-title">Back end</h3>
+                <p class="tech-stack__state tech-stack__state--growing"><span></span>Building up</p>
+              </div>
+            </div>
+            <ul class="tech-stack__skills" aria-label="Back-end skills">
+              <li><i class="fab fa-node-js" aria-hidden="true"></i>Node.js</li>
+              <li><i class="fas fa-database" aria-hidden="true"></i>Databases</li>
+              <li><i class="fas fa-plug" aria-hidden="true"></i>REST APIs</li>
+            </ul>
+          </article>
+          <article class="tech-stack__row" aria-labelledby="stack-workflow-title">
+            <div class="tech-stack__category">
+              <span class="tech-stack__index" aria-hidden="true">04</span>
+              <div>
+                <h3 id="stack-workflow-title">Workflow</h3>
+                <p class="tech-stack__state"><span></span>Daily use</p>
+              </div>
+            </div>
+            <ul class="tech-stack__skills" aria-label="Workflow skills">
+              <li><i class="fab fa-git-alt" aria-hidden="true"></i>Git</li>
+              <li><i class="fab fa-github" aria-hidden="true"></i>GitHub</li>
+              <li><i class="fas fa-mobile-screen" aria-hidden="true"></i>Mobile-first layouts</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section section--tint" aria-labelledby="hfaq-title">
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="hfaq-title">Questions people ask first</h2>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>I'm not technical. Can we still work together?</summary>
+            <p>Yes. Describe the problem in your own words and I handle the technical side, explaining each choice in
+              plain language.</p>
+          </details>
+          <details>
+            <summary>How much does a project cost?</summary>
+            <p>It depends on the scope. After a short conversation I send a written quote, so you know the price before
+              any work starts.</p>
+          </details>
+          <details>
+            <summary>How long does a project take?</summary>
+            <p>A simple business website often takes one to three weeks. Web apps and automation take longer, and I give
+              you a timeline in the quote.</p>
+          </details>
+          <details>
+            <summary>What if I only have a rough idea?</summary>
+            <p>That is a good place to start. We shape the idea together into a small first version you can test before
+              investing more.</p>
+          </details>
+          <details>
+            <summary>Will the site work on phones?</summary>
+            <p>Yes. I build responsive layouts for phones, tablets and desktops, and test the experience across screen sizes.</p>
+          </details>
+          <details>
+            <summary>What happens after launch?</summary>
+            <p>I can help with fixes, content updates and new features after your site or tool goes live.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section contact-section" aria-labelledby="cta-title">
+      <div class="wrap">
+        <div class="cta-band">
+          <h2 id="cta-title">Have a problem that software could solve?</h2>
+          <p>Tell me what is slowing your business down, who it affects and what a better outcome would look like. If
+            you have a budget or deadline in mind, include that too.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="form" id="contactForm" novalidate action="https://formspree.io/f/xnpjnqpk" method="POST">
+          <input type="hidden" name="_subject" value="New portfolio enquiry">
+          <p class="hp" aria-hidden="true"><label>Leave empty <input type="text" name="website" tabindex="-1" autocomplete="off"></label></p>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="name-error">
+              <p class="error" id="name-error"></p>
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="email-error">
+              <p class="error" id="email-error"></p>
+            </div>
+          </div>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="project_type">What do you need?</label>
+              <select id="project_type" name="project_type" required aria-describedby="project_type-error">
+                <option value="" disabled selected>Choose one</option>
+                <option>Business website</option>
+                <option>Web app or internal tool</option>
+                <option>Workflow automation</option>
+                <option>API integration</option>
+                <option>Something else</option>
+              </select>
+              <p class="error" id="project_type-error"></p>
+            </div>
+            <div class="field">
+              <label for="timeline">Timeline (optional)</label>
+              <select id="timeline" name="timeline">
+                <option value="">Not sure yet</option>
+                <option>As soon as possible</option>
+                <option>Within a month</option>
+                <option>In 2 to 3 months</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="message">What problem are you trying to solve?</label>
+            <textarea id="message" name="message" rows="6" required aria-describedby="message-error"></textarea>
+            <p class="hint">Example: "We take orders on WhatsApp and lose track of them."</p>
+            <p class="error" id="message-error"></p>
+          </div>
+
+          <button type="submit" class="btn btn--primary">Send message</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <aside class="contact-side">
+            <div class="section-head">
+              <span class="navs">Contact</span>
+            </div>
+            <h2>Prefer to write directly?</h2>
+            <ul class="contact-list">
+              <li><i class="fas fa-envelope" aria-hidden="true"></i><span><a href="mailto:obasiemma2007@gmail.com">obasiemma2007@gmail.com</a></span></li>
+              <li><i class="fas fa-phone" aria-hidden="true"></i><span><a href="tel:+2349069411906">(+234) 906 941 1906</a></span></li>
+              <li><i class="fab fa-linkedin" aria-hidden="true"></i><span><a href="https://www.linkedin.com/in/emmanuel-obasi-2b7757327?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer">LinkedIn</a></span></li>
+              <li><i class="fab fa-github" aria-hidden="true"></i><span><a href="https://github.com/Morgans12" target="_blank" rel="noopener noreferrer">GitHub</a></span></li>
+              <li><i class="fab fa-instagram" aria-hidden="true"></i><span><a href="https://www.instagram.com/m.freeman08?cplk=YWZ2bjlvNDE2ZnQz" target="_blank" rel="noopener noreferrer">Instagram</a></span></li>
+              <li><i class="fab fa-twitter" aria-hidden="true"></i><span><a href="https://x.com/EmmanuelOb6174" target="_blank" rel="noopener noreferrer">X (Twitter)</a></span></li>
+              <li><i class="fas fa-clock" aria-hidden="true"></i><span>I reply within two working days.</span></li>
+            </ul>
+            <h2 style="margin-top:2rem">What happens next</h2>
+            <p>I’ll review your message, follow up with any questions, then outline a practical next step and estimate.
+              The initial conversation is free.</p>
+            <a class="btn btn--primary" href="cv/Emmanuels_Resume.pdf" target="_blank" rel="noopener"><i class="fas fa-download" aria-hidden="true"></i> Download Resume</a>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Emmanuel Obasi. All rights reserved.</p>
+        <span class="mcode"><span class="mcode__mark" aria-hidden="true">&lt;/&gt;</span>M<span class="mcode__dot" aria-hidden="true">.</span>CODE</span>
+
+        <a href="#main">Back to top &uarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
